@@ -1,21 +1,48 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# site wide configuration
 
-# Site settings
-title: Hello world form before30
-email: before30@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username:  
-github_username:  
+title: Hello world from before30
+locale: en_US
+url:
 
-# Build settings
-markdown: kramdown
+####
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: true
+
+owner:
+  name: Joseph Yang
+  avatar: avatar.jpg
+  bio: "Software Engineer and Artist"
+  email: before30@gmail.com
+  
+  twitter: #username
+  facebook: wonsuk.yang.35
+  github: before30
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: xbefore30
+  xing: #username
+  instagram: #username
+  lastfm: before30
+  tumblr: sundayarter
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: before30
+  weibo: #username
+  flickr: #username
+  codepen: #username
+
